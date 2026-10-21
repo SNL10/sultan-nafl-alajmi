@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلطان نفل العجمي | السيرة الذاتية والإنجازات القيادية</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Cairo & Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Tailwind Theme Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#FAF8ED',
+                            100: '#F3EFD2',
+                            300: '#E2D591',
+                            500: '#D4AF37',
+                            600: '#B89327',
+                            700: '#8C6C1B'
+                        },
+                        darkBg: '#070A10',
+                        cardBg: '#0F1626',
+                        glassBg: 'rgba(15, 22, 38, 0.75)',
+                        emeraldBadge: '#059669'
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                        tajawal: ['Tajawal', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #070A10;
+            color: #F3F4F6;
+            overflow-x: hidden;
+        }
+
+        .glass-nav {
+            background: rgba(7, 10, 16, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .glass-card {
+            background: linear-gradient(145deg, rgba(17, 25, 42, 0.85) 0%, rgba(10, 15, 26, 0.95) 100%);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px -15px rgba(212, 175, 55, 0.15);
+        }
+
+        .gold-text {
+            background: linear-gradient(135deg, #FFF6D1 0%, #D4AF37 50%, #997A15 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .emerald-text {
+            background: linear-gradient(135deg, #A7F3D0 0%, #10B981 50%, #047857 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cert-card {
+            position: relative;
+            background: rgba(15, 22, 38, 0.7);
+            border: 1px solid rgba(212, 175, 55, 0.18);
+            transition: all 0.3s ease;
+        }
+        .cert-card:hover {
+            border-color: rgba(212, 175, 55, 0.5);
+            background: rgba(20, 30, 50, 0.85);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #070A10;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1E293B;
+            border-radius: 4px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold-500 selection:text-black">
+
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-500 via-yellow-300 to-gold-700 p-[2px] shadow-lg shadow-gold-500/10">
+                        <div class="w-full h-full bg-darkBg rounded-[10px] flex items-center justify-center font-black text-xl text-gold-500">
+                            SA
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#hero" class="text-xl font-black tracking-wide text-white block">سلطان نفل العجمي</a>
+                        <span class="text-[11px] text-gold-500 font-semibold tracking-wider block">Sultan Al-Ajmi | Executive Profile</span>
+                    </div>
+                </div>
+
+                <nav class="hidden lg:flex items-center gap-1">
+                    <a href="#bio" class="px-4 py-2 rounded-xl text-sm font-bold text-gray-300 hover:text-gold-500 hover:bg-slate-800/50 transition-all">النبذة التعريفية</a>
+                    <a href="#qualifications" class="px-4 py-2 rounded-xl text-sm font-bold text-gray-300 hover:text-gold-500 hover:bg-slate-800/50 transition-all">المؤهلات المعتمدة</a>
+                    <a href="#certifications" class="px-4 py-2 rounded-xl text-sm font-bold text-gray-300 hover:text-gold-500 hover:bg-slate-800/50 transition-all">سجل الشهادات</a>
+                    <a href="#initiatives" class="px-4 py-2 rounded-xl text-sm font-bold text-gray-300 hover:text-gold-500 hover:bg-slate-800/50 transition-all">المبادرات والمشاريع</a>
+                    <a href="#contact" class="px-4 py-2 rounded-xl text-sm font-bold text-gray-300 hover:text-gold-500 hover:bg-slate-800/50 transition-all">التواصل المباشر</a>
+                </nav>
+
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="#contact" class="bg-gradient-to-r from-gold-500 to-yellow-600 hover:from-yellow-400 hover:to-gold-500 text-slate-950 font-black px-6 py-2.5 rounded-xl shadow-lg shadow-gold-500/20 hover:shadow-gold-500/40 transition-all text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>تواصل مع المكتب</span>
+                    </a>
+                </div>
+
+                <div class="lg:hidden flex items-center">
+                    <button id="mobileMenuBtn" aria-label="القائمة" class="text-gray-300 hover:text-white p-2 rounded-lg focus:outline-none">
+                        <i class="fa-solid fa-bars-staggered text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden bg-darkBg border-b border-slate-800 backdrop-blur-2xl px-4 pt-3 pb-6 space-y-2">
+            <a href="#bio" class="mobile-link block px-4 py-3 rounded-xl text-base font-bold text-gray-200 hover:bg-slate-900 hover:text-gold-500">النبذة التعريفية</a>
+            <a href="#qualifications" class="mobile-link block px-4 py-3 rounded-xl text-base font-bold text-gray-200 hover:bg-slate-900 hover:text-gold-500">المؤهلات المعتمدة</a>
+            <a href="#certifications" class="mobile-link block px-4 py-3 rounded-xl text-base font-bold text-gray-200 hover:bg-slate-900 hover:text-gold-500">سجل الشهادات الاحترافية</a>
+            <a href="#initiatives" class="mobile-link block px-4 py-3 rounded-xl text-base font-bold text-gray-200 hover:bg-slate-900 hover:text-gold-500">المشاريع والمبادرات</a>
+            <a href="#contact" class="mobile-link block px-4 py-3 rounded-xl text-center font-black bg-gold-500 text-slate-950 mt-4 py-3">تواصل مع المكتب</a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="pt-20">
+
+        <!-- Hero Section -->
+        <section id="hero" class="relative min-h-[90vh] flex items-center justify-center py-20 px-4 overflow-hidden">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gold-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+            <div class="max-w-5xl mx-auto text-center relative z-10">
+                <div class="inline-block relative mb-8">
+                    <div class="w-36 h-36 sm:w-44 sm:h-44 rounded-full p-1 bg-gradient-to-tr from-gold-500 via-yellow-200 to-gold-600 shadow-2xl mx-auto relative group">
+                        <div class="w-full h-full bg-darkBg rounded-full overflow-hidden flex items-center justify-center relative border border-slate-800">
+                            <i class="fa-solid fa-user-shield text-6xl sm:text-7xl text-gold-500 group-hover:scale-105 transition-transform duration-500"></i>
+                        </div>
+                    </div>
+                    <span class="absolute bottom-2 right-2 bg-emerald-600 text-white text-xs font-black px-3 py-1.5 rounded-full shadow-xl flex items-center gap-1.5 border border-darkBg">
+                        <i class="fa-solid fa-circle-check text-[11px]"></i> موثق رسمياً
+                    </span>
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight mb-4 leading-tight">
+                    سلطان نفل العجمي
+                </h1>
+                <p class="text-xl sm:text-3xl font-extrabold gold-text mb-6 max-w-3xl mx-auto leading-relaxed">
+                    متخصص الموارد البشرية وذكاء الأعمال | رائد المبادرات الرقمية
+                </p>
+
+                <!-- Third-Person Narrative Executive Statement -->
+                <p class="text-gray-300 text-base sm:text-xl max-w-3xl mx-auto mb-10 leading-relaxed font-tajawal font-medium">
+                    وُلد <strong class="text-white font-bold">سلطان نفل العجمي</strong> في تاريخ 29 يناير 2003م. نستعرض لكم في هذه السيرة مسيرته المتميزة، حيث تتكامل رؤيته الإدارية الحديثة في الموارد البشرية مع كفاءته المتقدمة في تحليل البيانات وذكاء الأعمال، مسخراً خبراته لتأسيس وتفعيل المبادرات المنظمة والمشاريع المعتمدة رسمياً.
+                </p>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-12">
+                    <div class="glass-card p-5 rounded-2xl border border-slate-800">
+                        <div class="text-2xl sm:text-3xl font-black text-gold-500 mb-1" id="counterCert">10+</div>
+                        <div class="text-xs text-gray-400 font-bold">شهادة معتمدة</div>
+                    </div>
+                    <div class="glass-card p-5 rounded-2xl border border-slate-800">
+                        <div class="text-2xl sm:text-3xl font-black text-emerald-400 mb-1">100%</div>
+                        <div class="text-xs text-gray-400 font-bold">توثيق حكومي معتمد</div>
+                    </div>
+                    <div class="glass-card p-5 rounded-2xl border border-slate-800">
+                        <div class="text-2xl sm:text-3xl font-black text-gold-500 mb-1">2+</div>
+                        <div class="text-xs text-gray-400 font-bold">مبادرات ومشاريع رائدة</div>
+                    </div>
+                    <div class="glass-card p-5 rounded-2xl border border-slate-800">
+                        <div class="text-2xl sm:text-3xl font-black text-blue-400 mb-1">2024</div>
+                        <div class="text-xs text-gray-400 font-bold">تخرج من جامعة حفر الباطن</div>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+                    <a href="#qualifications" class="w-full sm:w-auto bg-gradient-to-r from-gold-500 to-yellow-600 hover:from-yellow-400 hover:to-gold-500 text-slate-950 font-black px-8 py-4 rounded-xl shadow-xl shadow-gold-500/20 hover:shadow-gold-500/40 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3 text-base">
+                        <i class="fa-solid fa-award"></i>
+                        <span>استعراض السجل والمؤهلات</span>
+                    </a>
+                    <a href="#initiatives" class="w-full sm:w-auto glass-card hover:bg-slate-800 text-white font-bold px-8 py-4 rounded-xl transition-all border border-slate-700 flex items-center justify-center gap-3 text-base">
+                        <i class="fa-solid fa-diagram-project text-gold-500"></i>
+                        <span>المشاريع والمبادرات</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Executive Biography Section -->
+        <section id="bio" class="py-20 bg-slate-900/30 relative border-y border-slate-800/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold tracking-widest text-gold-500 uppercase mb-2">رؤية ونبذة تنظيمية</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white">النبذة التعريفية الرسمية</h3>
+                    <div class="w-16 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-12 space-y-6 text-gray-300 font-tajawal text-base sm:text-lg leading-relaxed">
+                        <div class="glass-card p-6 sm:p-8 rounded-2xl border border-slate-800">
+                            <h4 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                                <i class="fa-solid fa-feather-pointed text-gold-500"></i>
+                                <span>المسار المهني والشغف التنموي للأستاذ سلطان</span>
+                            </h4>
+                            <p class="mb-4">
+                                يُعتبر الأستاذ <strong class="text-white font-bold">سلطان نفل العجمي</strong> (المولود في 29/01/2003) نموذجاً بارزاً للكوادر الوطنية المتميزة بتنوع خبراته وقدرته الفريدة على الجمع بين الجوانب الإدارية التنظيمية والحلول التقنية المعاصرة. يتميز بحصوله على <span class="text-gold-500 font-bold">دبلوم الموارد البشرية</span> وتخصص معتمد في <span class="text-emerald-400 font-bold">ذكاء الأعمال (Business Intelligence)</span>.
+                            </p>
+                            <p>
+                                حرص طوال مسيرته الأكاديمية والعملية على تطوير مهاراته القيادية، حيث تخرج من ثانوية الصرار عام 2020، ثم واصل تفوقه الأكاديمي ليتخرج من جامعة حفر الباطن عام 2024، مسخراً تعليمه الواسع لتقديم الاستشارات الاحترافية وإدارة المشاريع بكفاءة عالية.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic & Core Qualifications Section -->
+        <section id="qualifications" class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold tracking-widest text-emerald-400 uppercase mb-2">الركائز الأكاديمية والمهنية</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white">المؤهلات والاعتمادات الأساسية</h3>
+                    <div class="w-16 h-1 bg-emerald-400 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <div class="cert-card p-6 rounded-2xl flex flex-col justify-between border border-gold-500/20 hover:border-gold-500 transition-all">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-2xl font-bold mb-4">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <span class="text-[11px] font-bold text-gold-500 bg-gold-500/10 px-2.5 py-1 rounded-full border border-gold-500/20 inline-block mb-3">
+                                بكالوريوس / تخرج جامعي 2024
+                            </span>
+                            <h4 class="text-xl font-bold text-white mb-2">خريج جامعة حفر الباطن</h4>
+                            <p class="text-xs text-gold-500 font-semibold mb-3">University of Hafr Al-Batin (2024)</p>
+                            <p class="text-gray-400 text-xs leading-relaxed font-tajawal mb-6">
+                                أتم متطلبات Тخرج الأكاديمي بنجاح من جامعة حفر الباطن في عام 2024م، مما عزز حصيلته العلمية والمعرفية.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-gray-400">
+                            <span>الشهادة الجامعية</span>
+                            <span class="text-gold-500 font-bold"><i class="fa-solid fa-check"></i> خريج 2024</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card p-6 rounded-2xl flex flex-col justify-between border border-emerald-500/20 hover:border-emerald-500 transition-all">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl font-bold mb-4">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <span class="text-[11px] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20 inline-block mb-3">
+                                اعتماد حكومي رسمي
+                            </span>
+                            <h4 class="text-xl font-bold text-white mb-2">وثيقة عمل حر - ذكاء الأعمال</h4>
+                            <p class="text-xs text-emerald-400 font-semibold mb-3">Business Intelligence (BI) License</p>
+                            <p class="text-gray-400 text-xs leading-relaxed font-tajawal mb-6">
+                                يمتلك وثيقة رسمية سارية صادرة من وزارة الموارد البشرية والتنمية الاجتماعية برقم (<code class="text-emerald-400 font-mono">FL-989568755</code>).
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-gray-400">
+                            <span>وزارة الموارد البشرية</span>
+                            <span class="text-emerald-400 font-bold"><i class="fa-solid fa-shield-check"></i> اعتماد موثق</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card p-6 rounded-2xl flex flex-col justify-between border border-blue-500/20 hover:border-blue-500 transition-all">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-2xl font-bold mb-4">
+                                <i class="fa-solid fa-school"></i>
+                            </div>
+                            <span class="text-[11px] font-bold text-blue-400 bg-blue-500/10 px-2.5 py-1 rounded-full border border-blue-500/20 inline-block mb-3">
+                                تخرج ثانوي 2020
+                            </span>
+                            <h4 class="text-xl font-bold text-white mb-2">ثانوية الصرار</h4>
+                            <p class="text-xs text-blue-400 font-semibold mb-3">Al-Sarrar Secondary School (2020)</p>
+                            <p class="text-gray-400 text-xs leading-relaxed font-tajawal mb-6">
+                                تخرج من ثانوية الصرار بنجاح في عام 2020م ضمن مسار العلوم الطبيعية، ليؤسس انطلاقته الأكاديمية المتميزة.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-gray-400">
+                            <span>وزارة التعليم</span>
+                            <span class="text-blue-400 font-bold"><i class="fa-solid fa-check-double"></i> خريج 2020</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card p-6 rounded-2xl flex flex-col justify-between border border-purple-500/20 hover:border-purple-500 transition-all">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl font-bold mb-4">
+                                <i class="fa-solid fa-language"></i>
+                            </div>
+                            <span class="text-[11px] font-bold text-purple-400 bg-purple-500/10 px-2.5 py-1 rounded-full border border-purple-500/20 inline-block mb-3">
+                                اختبار معياري
+                            </span>
+                            <h4 class="text-xl font-bold text-white mb-2">سجل اختبار كفاية الإنجليزية</h4>
+                            <p class="text-xs text-purple-400 font-semibold mb-3">STEP Test Record (Qiyas)</p>
+                            <p class="text-gray-400 text-xs leading-relaxed font-tajawal mb-6">
+                                اجتاز اختبار كفاية اللغة الإنجليزية المعياري الصادر من هيئة تقويم التعليم والتدريب (قياس) بكفاءة عالية.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-gray-400">
+                            <span>مركز قياس (ETEC)</span>
+                            <span class="text-purple-400 font-bold"><i class="fa-solid fa-check"></i> موثق رسمياً</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Certificates & Training Section -->
+        <section id="certifications" class="py-20 bg-slate-900/40 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold tracking-widest text-gold-500 uppercase mb-2">تطوير الكفاءات والشهادات</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white">سجل الشهادات الحاصل عليها</h3>
+                    <p class="text-gray-400 text-sm mt-3 font-tajawal">مجموعة الشهادات التخصصية المعتمدة التي حصل عليها في تحليل البيانات، العروض الاستراتيجية، وإدارة الموارد البشرية</p>
+                    <div class="w-16 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <div class="glass-card p-6 rounded-2xl flex flex-col justify-between border border-slate-800 hover:border-gold-500/50 transition-all">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-gold-500/10 text-gold-500 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-calculator"></i>
+                                </div>
+                                <span class="text-[10px] bg-slate-900 text-gold-500 border border-gold-500/30 px-2.5 py-1 rounded-full font-bold">
+                                    علوم البيانات والذكاء الاصطناعي
+                                </span>
+                            </div>
+                            <h4 class="text-lg font-bold text-white mb-2">النمذجة والصيغ الرياضية المتقدمة وتحليل البيانات</h4>
+                            <p class="text-xs text-gray-400 font-tajawal leading-relaxed mb-4">
+                                حصل عليها ليؤكد قدرته على بناء المعادلات الرياضية المعقدة، تحليل الخوارزميات، واستخلاص الرؤى الذكية لخدمة اتخاذ القرار.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-gray-400">
+                            <span class="text-gray-500">شهادة معتمدة</span>
+                            <span class="text-emerald-400 font-bold"><i class="fa-solid fa-circle-check"></i> حاصل عليها</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl flex flex-col justify-between border border-slate-800 hover:border-emerald-500/50 transition-all">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-file-excel"></i>
+                                </div>
+                                <span class="text-[10px] bg-slate-900 text-emerald-400 border border-emerald-500/30 px-2.5 py-1 rounded-full font-bold">
+                                    التحليل الرقمي والنمذجة
+                                </span>
+                            </div>
+                            <h4 class="text-lg font-bold text-white mb-2">إدارة وتنسيق جداول البيانات والتحليل المتقدم Excel</h4>
+                            <p class="text-xs text-gray-400 font-tajawal leading-relaxed mb-4">
+                                توثق تمكنه من معالجة البيانات الضخمة، النمذجة المالية والإدارية، وبناء لوحات البيانات التفاعلية لخدمة العمليات.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-gray-400">
+                            <span class="text-gray-500">شهادة معتمدة</span>
+                            <span class="text-emerald-400 font-bold"><i class="fa-solid fa-circle-check"></i> حاصل عليها</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl flex flex-col justify-between border border-slate-800 hover:border-red-500/50 transition-all">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-red-500/10 text-red-400 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-file-powerpoint"></i>
+                                </div>
+                                <span class="text-[10px] bg-slate-900 text-red-400 border border-red-500/30 px-2.5 py-1 rounded-full font-bold">
+                                    العروض التقديمية القيادية
+                                </span>
+                            </div>
+                            <h4 class="text-lg font-bold text-white mb-2">صياغة وتصميم العروض التقديمية والاستراتيجية PowerPoint</h4>
+                            <p class="text-xs text-gray-400 font-tajawal leading-relaxed mb-4">
+                                تعكس احترافية عالية في إعداد العروض التنفيذية وصياغة المحتوى الاستراتيجي للشركات وترجمة البيانات بأسلوب مرئي مقنع.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-gray-400">
+                            <span class="text-gray-500">شهادة معتمدة</span>
+                            <span class="text-emerald-400 font-bold"><i class="fa-solid fa-circle-check"></i> حاصل عليها</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl flex flex-col justify-between border border-slate-800 hover:border-blue-500/50 transition-all">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-user-check"></i>
+                                </div>
+                                <span class="text-[10px] bg-slate-900 text-blue-400 border border-blue-500/30 px-2.5 py-1 rounded-full font-bold">
+                                    الموارد البشرية الناعمة
+                                </span>
+                            </div>
+                            <h4 class="text-lg font-bold text-white mb-2">إدارة المقابلة الشخصية الاحترافية واستقطاب الكفاءات</h4>
+                            <p class="text-xs text-gray-400 font-tajawal leading-relaxed mb-4">
+                                تشهد بامتلاكه مهارات تقييم المرشحين، إجراء المقابلات السلوكية والوظيفية، واختيار أفضل الكفاءات المتوافقة مع ثقافة العمل.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-gray-400">
+                            <span class="text-gray-500">شهادة معتمدة</span>
+                            <span class="text-emerald-400 font-bold"><i class="fa-solid fa-circle-check"></i> حاصل عليها</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl flex flex-col justify-between border border-slate-800 hover:border-purple-500/50 transition-all">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                </div>
+                                <span class="text-[10px] bg-slate-900 text-purple-400 border border-purple-500/30 px-2.5 py-1 rounded-full font-bold">
+                                    التخطيط المهني
+                                </span>
+                            </div>
+                            <h4 class="text-lg font-bold text-white mb-2">تنمية الفرص الوظيفية وتخطيط المسارات المهنية</h4>
+                            <p class="text-xs text-gray-400 font-tajawal leading-relaxed mb-4">
+                                توثق إلمامه باستراتيجيات الاستعداد لسوق العمل، توجيه المسارات الوظيفية الكبرى، واستكشاف الفرص التنموية الواعدة.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-gray-400">
+                            <span class="text-gray-500">شهادة معتمدة</span>
+                            <span class="text-emerald-400 font-bold"><i class="fa-solid fa-circle-check"></i> حاصل عليها</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl flex flex-col justify-between border border-slate-800 hover:border-yellow-500/50 transition-all">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-yellow-500/10 text-yellow-400 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </div>
+                                <span class="text-[10px] bg-slate-900 text-yellow-400 border border-yellow-500/30 px-2.5 py-1 rounded-full font-bold">
+                                    المهارات التقنية
+                                </span>
+                            </div>
+                            <h4 class="text-lg font-bold text-white mb-2">أساسيات الحاسب الآلي والمهارات التقنية الناعمة</h4>
+                            <p class="text-xs text-gray-400 font-tajawal leading-relaxed mb-4">
+                                تؤكد فهمه العميق للبنية التحتية للحاسب والأنظمة الرقمية، المواطنة الرقمية، والأمن المعلوماتي للتعامل الرقمي السليم.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-gray-400">
+                            <span class="text-gray-500">شهادة معتمدة</span>
+                            <span class="text-emerald-400 font-bold"><i class="fa-solid fa-circle-check"></i> حاصل عليها</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl flex flex-col justify-between border border-slate-800 hover:border-pink-500/50 transition-all sm:col-span-2 lg:col-span-3">
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                            <div>
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-10 h-10 rounded-lg bg-pink-500/10 text-pink-400 flex items-center justify-center text-xl">
+                                        <i class="fa-solid fa-gamepad"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-white">برمجة الألعاب وتطوير البيئات التفاعلية والرياضات الإلكترونية</h4>
+                                        <p class="text-xs text-pink-400 font-bold">Esports & Interactive Systems Programming</p>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-400 font-tajawal leading-relaxed">
+                                    شهادة متخصصة حصل عليها لتدعم شغفه في مبادئ تطوير وبرمجة الألعاب الإلكترونية وبناء المجتمعات التفاعلية المعاصرة وإدارة مجتمعات "درع العرب".
+                                </p>
+                            </div>
+                            <span class="text-xs text-emerald-400 font-bold bg-slate-950 px-4 py-2 rounded-xl border border-emerald-500/30 shrink-0">
+                                <i class="fa-solid fa-circle-check"></i> حاصل عليها ومعتمدة
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Executive Initiatives Section -->
+        <section id="initiatives" class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold tracking-widest text-gold-500 uppercase mb-2">مسيرة الإنجاز والريادة</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white">المشاريع والمبادرات المؤسسية</h3>
+                    <p class="text-gray-400 text-sm mt-3 font-tajawal">مبادرات ريادية ومجتمعية أسسها وأدارها بكفاءة تنظيمية عالية</p>
+                    <div class="w-16 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div class="glass-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-gold-500/30">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-3xl font-bold mb-6 border border-gold-500/20">
+                                <i class="fa-solid fa-store"></i>
+                            </div>
+                            <span class="text-xs font-bold text-gold-500 bg-gold-500/10 px-3 py-1 rounded-full border border-gold-500/30 inline-block mb-3">
+                                مشروع تجاري معتمد
+                            </span>
+                            <h4 class="text-2xl font-bold text-white mb-2">متجر SNL STORE</h4>
+                            <p class="text-xs font-mono text-gray-400 mb-4">Official E-Commerce Brand</p>
+                            <p class="text-gray-300 text-sm font-tajawal leading-relaxed mb-6">
+                                منشأة رقمية سعودية موثقة رسمياً بالمركز السعودي للأعمال برقم توثيق (<span class="text-gold-500 font-bold">0000333926</span>). قام بتأسيسها وإدارتها <strong class="text-white">سلطان العجمي</strong> لتقديم الخدمات الرقمية والتنافسية بأعلى معايير الجودة.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                            <span class="text-xs text-gray-400">المركز السعودي للأعمال</span>
+                            <a href="https://tiktok.com/@snl_35" target="_blank" rel="noopener noreferrer" class="text-gold-500 font-bold text-xs hover:underline flex items-center gap-1">
+                                <span>عرض المنصة</span>
+                                <i class="fa-solid fa-external-link text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="glass-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-indigo-500/30">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-3xl font-bold mb-6 border border-indigo-500/20">
+                                <i class="fa-brands fa-discord"></i>
+                            </div>
+                            <span class="text-xs font-bold text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/30 inline-block mb-3">
+                                مجتمع رقمي وتفاعلي
+                            </span>
+                            <h4 class="text-2xl font-bold text-white mb-2">سيرفر "درع العرب"</h4>
+                            <p class="text-xs font-mono text-indigo-400 mb-4">Dera Al-Arab Discord Community</p>
+                            <p class="text-gray-300 text-sm font-tajawal leading-relaxed mb-6">
+                                مجتمع رقمي وثقافي تفاعلي أسسه <strong class="text-white font-bold">عبدالله الدوسري</strong> (صديق سلطان العجمي) على منصة ديسكورد لتجميع الهواة وصناع المحتوى، مع تطبيق نظام أمان متكامل ونظام الوساطة وتأمين التعاملات بين الأعضاء.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                            <span class="text-xs text-gray-400">مؤسس السيرفر: عبدالله الدوسري</span>
+                            <span class="text-indigo-400 font-bold text-xs flex items-center gap-1">
+                                <i class="fa-solid fa-shield text-[10px]"></i> مجتمع آمن ونشط
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-purple-500/30">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-3xl font-bold mb-6 border border-purple-500/20">
+                                <i class="fa-solid fa-microphone-lines"></i>
+                            </div>
+                            <span class="text-xs font-bold text-purple-400 bg-purple-500/10 px-3 py-1 rounded-full border border-purple-500/30 inline-block mb-3">
+                                الإنتاج الوثائقي
+                            </span>
+                            <h4 class="text-2xl font-bold text-white mb-2">المحتوى الصوتي والوثائقي</h4>
+                            <p class="text-xs font-mono text-purple-400 mb-4">Voice & Documentary Production</p>
+                            <p class="text-gray-300 text-sm font-tajawal leading-relaxed mb-6">
+                                ينتج ويقدم محتوى وثائقي وقصصي صوتي بإلقائه الشخصي، يتناول جوانب الموارد البشرية، التاريخ، والثقافة بصوت طبيعي وجودة إخراجية فائقة.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                            <span class="text-xs text-gray-400">إنتاج مرئي وصوتي</span>
+                            <span class="text-purple-400 font-bold text-xs flex items-center gap-1">
+                                <i class="fa-solid fa-headphones"></i> محتوى مستمر
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Official Contact Section -->
+        <section id="contact" class="py-20 bg-slate-900/60 relative border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold tracking-widest text-gold-500 uppercase mb-2">قنوات التواصل والتنسيق</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white">التواصل مع المكتب التنفيذي</h3>
+                    <p class="text-gray-400 text-sm mt-3 font-tajawal">يمكنكم إرسال الاستفسارات الرسمية واستشارات الموارد البشرية وذكاء الأعمال لمكتب الأستاذ سلطان</p>
+                    <div class="w-16 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid lg:grid-cols-12 gap-8">
+
+                    <div class="lg:col-span-7">
+                        <div class="glass-card p-6 sm:p-8 rounded-2xl border border-slate-800">
+                            <h4 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                                <i class="fa-solid fa-envelope-open-text text-gold-500"></i>
+                                <span>نموذج التواصل الرسمي</span>
+                            </h4>
+
+                            <form id="officialContactForm" onsubmit="handleFormSubmission(event)" class="space-y-4">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label for="formName" class="block text-xs font-bold text-gray-300 mb-2">اسم الجهة / الشخص التواصل</label>
+                                        <input type="text" id="formName" required placeholder="مثال: شركة..." class="w-full bg-slate-950 border border-slate-800 focus:border-gold-500 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none transition-colors">
+                                    </div>
+                                    <div>
+                                        <label for="formContact" class="block text-xs font-bold text-gray-300 mb-2">البريد أو رقم التواصل</label>
+                                        <input type="text" id="formContact" required placeholder="05xxxxxxxx أو email@domain.com" class="w-full bg-slate-950 border border-slate-800 focus:border-gold-500 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none transition-colors">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="formSubject" class="block text-xs font-bold text-gray-300 mb-2">نوع الطلب / الاستشارة</label>
+                                    <select id="formSubject" class="w-full bg-slate-950 border border-slate-800 focus:border-gold-500 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none transition-colors">
+                                        <option value="استشارة موارد بشرية">استشارة تنظيم إداري وموارد بشرية</option>
+                                        <option value="استشارة ذكاء أعمال BI">تحليل بيانات واستشارة ذكاء أعمال (BI)</option>
+                                        <option value="شراكة أو مبادرة">شراكة أعمال أو مبادرة رقمية</option>
+                                        <option value="تواصل عام">تواصل عام</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="formMessage" class="block text-xs font-bold text-gray-300 mb-2">تفاصيل الخطاب أو الرسالة</label>
+                                    <textarea id="formMessage" rows="4" required placeholder="اكتب نص الخطاب هنا..." class="w-full bg-slate-950 border border-slate-800 focus:border-gold-500 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none transition-colors resize-none"></textarea>
+                                </div>
+
+                                <button type="submit" class="w-full bg-gradient-to-r from-gold-500 to-yellow-600 hover:from-yellow-400 hover:to-gold-500 text-slate-950 font-black py-4 rounded-xl transition-all shadow-xl shadow-gold-500/20 flex items-center justify-center gap-2 text-base cursor-pointer">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    <span>إرسال الخطاب المباشر</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5 space-y-4">
+                        <h4 class="text-xl font-bold text-white mb-6">المنصات وحسابات المتابعة</h4>
+
+                        <a href="https://instagram.com/snl_store1" target="_blank" rel="noopener noreferrer" class="glass-card p-4 rounded-2xl flex items-center gap-4 hover:border-pink-500/50 transition-all block border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 text-white flex items-center justify-center text-2xl shrink-0">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-sm font-bold text-white">الانستغرام الرسمي</h5>
+                                <p class="text-xs text-gray-400 font-mono">@snl_store1</p>
+                            </div>
+                        </a>
+
+                        <a href="https://tiktok.com/@snl_35" target="_blank" rel="noopener noreferrer" class="glass-card p-4 rounded-2xl flex items-center gap-4 hover:border-slate-500/50 transition-all block border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-slate-950 text-white flex items-center justify-center text-2xl border border-slate-800 shrink-0">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-sm font-bold text-white">منصة تيك توك</h5>
+                                <p class="text-xs text-gray-400 font-mono">@snl_35</p>
+                            </div>
+                        </a>
+
+                        <div class="glass-card p-4 rounded-2xl flex items-center gap-4 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-600 text-white flex items-center justify-center text-2xl shrink-0">
+                                <i class="fa-brands fa-discord"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-sm font-bold text-white">مجتمع سيرفر درع العرب</h5>
+                                <p class="text-xs text-gray-400">سيرفر ديسكورد الرسمي للتواصل</p>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-slate-950 border border-gold-500/20 space-y-3 font-tajawal text-xs">
+                            <div class="flex justify-between items-center pb-2 border-b border-slate-900">
+                                <span class="text-gray-400">توثيق المركز السعودي للأعمال:</span>
+                                <span class="font-mono text-gold-500 font-bold">0000333926</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-400">وثيقة العمل الحر (BI):</span>
+                                <span class="font-mono text-emerald-400 font-bold">FL-989568755</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darkBg border-t border-slate-900 py-10 text-center text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="font-black text-white text-base mb-1">سلطان نفل العجمي | Sultan Al-Ajmi</p>
+            <p class="font-tajawal text-gray-400 mb-4">السيرة الذاتية الرسمية والموقع الموثق للإنجازات والاعتمادات © 2026</p>
+            <div class="flex justify-center gap-4 text-gray-400 text-lg">
+                <a href="https://instagram.com/snl_store1" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-gold-500"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://tiktok.com/@snl_35" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="hover:text-gold-500"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Overlay -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-28 opacity-0 transition-all duration-300 max-w-md bg-slate-950 border border-gold-500 text-white p-5 rounded-2xl shadow-2xl flex items-center gap-4 pointer-events-none">
+        <div class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-500 flex items-center justify-center text-xl shrink-0">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div>
+            <h5 class="font-bold text-sm text-white" id="toastTitle">تم الاستلام بنجاح</h5>
+            <p class="text-xs text-gray-300 font-tajawal" id="toastMessage">شكرًا لك، تم توثيق خطابك وسيقوم المكتب بالرد قريباً.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript Script Code -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        function handleFormSubmission(e) {
+            e.preventDefault();
+            const name = document.getElementById('formName').value;
+            const subject = document.getElementById('formSubject').value;
+
+            triggerToast('تم استلام خطابك بنجاح', `شكراً لك (${name})، تم تسليم طلبك حول "${subject}" للمكتب وسيتم التواصل معكم.`);
+            document.getElementById('officialContactForm').reset();
+        }
+
+        function triggerToast(title, message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastTitle').innerText = title;
+            document.getElementById('toastMessage').innerText = message;
+
+            toast.classList.remove('translate-y-28', 'opacity-0', 'pointer-events-none');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-28', 'opacity-0', 'pointer-events-none');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
